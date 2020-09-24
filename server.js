@@ -3,7 +3,7 @@ const express = require("express");
 const session = require("express-session");
 // Requiring passport as we've configured it
 const passport = require("./config/passport");
-
+const exphbs = require("express-handlebars")
 // Setting up port and requiring models for syncing
 const PORT = process.env.PORT || 8080;
 const db = require("./models");
@@ -19,7 +19,16 @@ app.use(
 );
 app.use(passport.initialize());
 app.use(passport.session());
+const hbs = exphbs.create({
+  helpers: {
+    format_date: date => {
+      return `${date.getMonth() + 1}/${date.getDate()}/${date.getFullYear()}`;
+    }
+  }
+});
 
+app.engine("handlebars", hbs.engine);
+app.set("view engine", "handlebars");
 // Requiring our routes
 require("./routes/html-routes.js")(app);
 require("./routes/api-routes.js")(app);
