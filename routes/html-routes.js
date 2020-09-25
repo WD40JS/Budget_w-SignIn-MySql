@@ -23,29 +23,20 @@ module.exports = function(app) {
     if (req.user) {
       res.redirect("/members");
     }
-<<<<<<< HEAD
-    res.render ("login")
-=======
     res.render ("login", {
       style:'style3.css',
       })
->>>>>>> tia_html
   });
 
   app.get("/signup", (req, res) => {
     // If the user already has an account send them to the members page
     if (req.user) {
       res.redirect("/members");
-<<<<<<< HEAD
-    }
-    res.render ("signup")
-=======
 
     }
     res.render ("signup", {
       style:'style3.css',
       })
->>>>>>> tia_html
   });
 
   // Here we've add our isAuthenticated middleware to this route.
