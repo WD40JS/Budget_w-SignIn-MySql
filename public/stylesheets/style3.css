@@ -15,5 +15,10 @@ body, html {
 }
 h2 {
   color: red;
+  text-align: center;
+
+}
+.signx {
+float: right;
 
 }
