@@ -5,7 +5,7 @@ const path = require("path");
 const isAuthenticated = require("../config/middleware/isAuthenticated");
 
 module.exports = function(app) {
-  app.get("/members", (req, res) => {
+  app.get("/", (req, res) => {
     style:
     // If the user already has an account send them to the members page
     if (req.user) {
@@ -13,8 +13,8 @@ module.exports = function(app) {
       
     }
     // res.sendFile(path.join(__dirname, "../public/signup.html")); 
-  res.render ("members", {
-  style:'style.css',
+  res.render ("signup", {
+  style:'style3.css',
   })
   });
 
@@ -28,14 +28,14 @@ module.exports = function(app) {
       })
   });
 
-  app.get("/signup", (req, res) => {
+  app.get("/members", (req, res) => {
     // If the user already has an account send them to the members page
     if (req.user) {
       res.redirect("/members");
 
     }
-    res.render ("signup", {
-      style:'style3.css',
+    res.render ("members", {
+      style:'style.css',
       })
   });
 
