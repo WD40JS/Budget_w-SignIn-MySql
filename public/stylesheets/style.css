@@ -46,13 +46,13 @@ body,html {
 }
 
 .month-container {
-    padding-top: 25%;
+    padding-top: 50%;
     padding-left: 5%;
     padding-right: 5%;
 }
 
 .calc-container {
-    padding-top: 12%;
+    padding-top: 1%;
     padding-left: 5%;
     padding-right: 5%;
 }
@@ -77,30 +77,33 @@ body,html {
     font-weight: 700;
 }
 
+
 .bottom-border {
     border-bottom: 1px solid #00446D;
+    color: #61ec5e;
 }
 
 .expense-row {
     padding: 20px;
     font-size: 15pt;
-    font-style: italic;
-    font-variant: all small-caps ;
+
+    
 }
 
 .expense-date {
-    color: white;
+    color:  rgb(255, 198, 11);
     font-size: large;
 }
 
 .expense-text {
-    color: white;
+    color: rgb(255, 198, 11);
     font-size: large;
 }
 
 .expense-list {
     overflow-y: scroll;
-    color: #ffffff;
+    color: rgb(255, 198, 11);
+    text-transform: uppercase;
 }
 
 .fs-15 {
@@ -124,7 +127,9 @@ body,html {
 }
 
 #expense-chart {
-    margin: 20% 0;
+    align-items: center;
+    margin: 12% 0;
+    margin-top: 12pc;
 }
 
 .btn-submit-expense {
@@ -140,4 +145,16 @@ body,html {
     font-size: 12px;
     font-weight: 700;
     margin-top: 1%;
+}
+
+.chart-container {
+margin-left: 200px;
+bottom: 300px;
+
+}
+
+.chart-box {
+
+height: 50%;
+width: 100%;
 }
