@@ -30,8 +30,8 @@ module.exports = function(app) {
 
   app.get("/members", (req, res) => {
     // If the user already has an account send them to the members page
-    if (req.user) {
-      res.redirect("/members");
+    if (!req.user) {
+      res.redirect("/login");
 
     }
     res.render ("members", {
