@@ -1,0 +1,24 @@
+
+body, html {
+  
+    height: 100%;
+  
+    /* The image used */
+    background-image: url("./images/moneyhome.jpg");
+  
+    
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  h2 {
+    color: red;
+    text-align: center;
+  
+  }
+  .signx {
+  float: right;
+  
+  }
