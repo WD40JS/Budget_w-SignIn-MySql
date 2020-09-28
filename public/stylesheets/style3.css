@@ -14,12 +14,11 @@ body, html {
   background-size: cover;
 }
 h2 {
-  
-  text-align: left;
+  color: red;
+  text-align: center;
 
 }
-.item-6{
-margin-top: 100px;
+.signx {
 float: right;
 
 }

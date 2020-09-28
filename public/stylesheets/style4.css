@@ -6,19 +6,15 @@ body, html {
     /* The image used */
     background-image: url("./images/moneyhome.jpg");
   
-    min-height:100%;
-  background-size:cover;
-  box-shadow:inset 0 0 0 2000px rgba(5, 0, 14, 0.5);
+    
   
     /* Center and scale the image nicely */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
   }
-
-
   h2 {
-    color: white;
+    color: red;
     text-align: center;
     im src="" alt="snaplogo" class="logo"
   
