@@ -244,5 +244,3 @@ let dropDown = document.getElementById('dropdownMenu3');
 
 
 
-
-
