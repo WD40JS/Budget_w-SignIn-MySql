@@ -20,14 +20,13 @@ body, html {
   h2 {
     color: white;
     text-align: center;
+    im src="" alt="snaplogo" class="logo"
   
   }
   .signx {
   float: right;
   
   }
-
-
 
   .row {
     display: flex;
