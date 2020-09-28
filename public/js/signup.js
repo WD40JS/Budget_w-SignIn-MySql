@@ -40,6 +40,3 @@ $(document).ready(() => {
     $("#alert").fadeIn(500);
   }
 });
-
- new Date().toDateString()
-"2020-09-26T22:46:07.8292"

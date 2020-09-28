@@ -24,7 +24,7 @@ module.exports = function(app) {
       res.redirect("/members");
     }
     res.render ("login", {
-      style:'style4.css',
+      style:'style3.css',
       })
   });
 
