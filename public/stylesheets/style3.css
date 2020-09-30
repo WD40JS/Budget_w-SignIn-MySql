@@ -24,3 +24,10 @@ margin-top: 100px;
 float: right;
 
 }
+
+.styled {
+  background-image: url(C:\Users\nnico\Desktop\GitHub\p2\project_2\public\stylesheets\images\snapless.jpg);
+  background-repeat: no-repeat;
+  width: 10px;
+  height: 20px;
+  }
