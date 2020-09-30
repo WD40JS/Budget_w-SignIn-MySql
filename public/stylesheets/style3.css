@@ -4,7 +4,7 @@ body, html {
   height: 100%;
 
   /* The image used */
-  background-image: url("./public/images/home.jpg");
+  background-image: url("/images/home.jpg");
 
   
 
@@ -13,22 +13,25 @@ body, html {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 h2 {
   
   text-align: left;
 
 
 }
-.item-6{
-margin-top: 100px;
+.item-6 {
+margin-top: 30px;
 float: right;
 
 }
-/* 
-.styled {
-  background-image: url(../images/snapless.jpg);
-  background-repeat: no-repeat;
-  width: 10px;
-  height: 20px;
-  background-color: beige;
-  } */
+
+.logo {
+  margin: auto;
+  width: 70%;
+  padding: 5px;
+  margin-left: 97%;
+  align-content: center;
+  }
+
+  
