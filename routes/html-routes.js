@@ -11,7 +11,7 @@ module.exports = function(app) {
       
     }
    
-  res.render ("signup", {
+  res.render ("/signup", {
   style:'style3.css',
   })
   });
