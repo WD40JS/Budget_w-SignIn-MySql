@@ -4,14 +4,14 @@ const isAuthenticated = require("../config/middleware/isAuthenticated");
 
 // Export Routes for Users Signup Page/Home Page
 module.exports = function(app) {
-  app.get("/", (req, res) => {
+  app.get("/signup", (req, res) => {
     
     if (req.user) {
       res.redirect("/members");
       
     }
    
-  res.render ("/", {
+  res.render ("signup", {
   style:'style3.css',
   })
   });
