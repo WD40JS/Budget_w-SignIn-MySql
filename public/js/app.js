@@ -16,7 +16,7 @@ let ExpenseController = (() => {
                 total -= userInput['value'];
             }
         },
-
+        
         getIncomeData() {
             return income;
         },

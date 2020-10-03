@@ -20,11 +20,9 @@ module.exports = function(app) {
       password: req.body.password
     })
       .then(() => {
-        res.redirect(307, "/api/signup");
+        res.redirect(307, "/api/login");
       })
       .catch(err => {
-        console.log("api signup error:");
-        console.log(err);
         res.status(401).json(err);
       });
   });
@@ -32,7 +30,7 @@ module.exports = function(app) {
   // Route for Logging User Out
   app.get("/logout", (req, res) => {
     req.logout();
-    res.redirect("/signup");
+    res.redirect("/");
   });
 
   // Route for User Data

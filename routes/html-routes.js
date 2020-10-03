@@ -4,16 +4,15 @@ const isAuthenticated = require("../config/middleware/isAuthenticated");
 
 // Export Routes for Users Signup Page/Home Page
 module.exports = function(app) {
-  app.get("/signup", (req, res) => {
+  app.get("/", (req, res) => {
     
     if (req.user) {
       res.redirect("/members");
-      
     }
-   
-  res.render ("/signup", {
-  style:'style3.css',
-  })
+
+      res.render ("signup", {
+      style:'style3.css',
+      })
   });
 
   // Export Routes for Users Login Page
@@ -29,8 +28,9 @@ module.exports = function(app) {
 
   // Export Routes for Users Members Page
   app.get("/members", isAuthenticated, (req, res) => {
+  res.sendFile(path.join(__dirname, "./views/members.handlebars"));
     
-    if (!req.user) {
+  if (!req.user) {
       res.redirect("/members");
 
     }
@@ -38,6 +38,4 @@ module.exports = function(app) {
       style:'style.css',
       })
   });
-
-
 };
