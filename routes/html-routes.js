@@ -7,7 +7,7 @@ module.exports = function(app) {
   app.get("/", (req, res) => {
     
     if (req.user) {
-      res.redirect("/members");
+      res.render("members");
     }
 
       res.render ("signup", {
@@ -19,7 +19,7 @@ module.exports = function(app) {
   app.get("/login", (req, res) => {
     
     if (req.user) {
-      res.redirect("/members");
+      res.render ("members");
     }
     res.render ("login", {
       style:'style4.css',
@@ -28,10 +28,9 @@ module.exports = function(app) {
 
   // Export Routes for Users Members Page
   app.get("/members", isAuthenticated, (req, res) => {
-  res.sendFile(path.join(__dirname, "./views/members.handlebars"));
-    
+ 
   if (!req.user) {
-      res.redirect("/members");
+      res.render("members");
 
     }
     res.render ("members", {

@@ -35,11 +35,12 @@ format_date: (date) => {
 app.engine("handlebars", hbs.engine);
 app.set("view engine", "handlebars");
 
-require("./routes/html-routes.js")(app);
 require("./routes/api-routes.js")(app);
+require("./routes/html-routes.js")(app);
+
 
 // Sequelize to Port and Mysql Information
-db.sequelize.sync().then(() => {
+db.sequelize.sync({force:false}).then(() => {
 app.listen(PORT, () => {
 console.log(
   "==> 🌎  Listening on port %s. Visit http://localhost:%s/ in your browser.",

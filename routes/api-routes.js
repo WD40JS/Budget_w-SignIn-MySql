@@ -6,7 +6,7 @@ module.exports = function(app) {
  
 // Post Password Information Login
   app.post("/api/login", passport.authenticate("local"), (req, res) => {
-
+console.log(req)
     res.json({
       email: req.user.email,
       id: req.user.id
@@ -20,7 +20,7 @@ module.exports = function(app) {
       password: req.body.password
     })
       .then(() => {
-        res.redirect(307, "/api/login");
+        res.redirect(307, "/login");
       })
       .catch(err => {
         res.status(401).json(err);

@@ -16,7 +16,7 @@ let ExpenseController = (() => {
                 total -= userInput['value'];
             }
         },
-        
+
         getIncomeData() {
             return income;
         },
@@ -240,6 +240,7 @@ let dropDown = document.getElementById('dropdownMenu3');
     init();
 
 })(UIController, ExpenseController);
+
 
 
 
