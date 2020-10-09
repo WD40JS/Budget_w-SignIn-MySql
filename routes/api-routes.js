@@ -6,7 +6,6 @@ module.exports = function(app) {
  
 // Post Password Information Login
   app.post("/api/login", passport.authenticate("local"), (req, res) => {
-console.log(req)
     res.json({
       email: req.user.email,
       id: req.user.id
