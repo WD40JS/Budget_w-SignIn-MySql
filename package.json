@@ -8,7 +8,7 @@
     "start": "node server.js",
     "lint": "eslint --quiet .",
     "fix": "eslint --fix .",
-    "watch": "nodemon server.js"
+    "watch": "node server.js"
   },
   "keywords": [],
   "author": "",
