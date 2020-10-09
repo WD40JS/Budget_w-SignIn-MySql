@@ -24,7 +24,7 @@ $(document).ready(() => {
 
   // Post Signup Route or Errors
   function signUpUser(email, password) {
-    $.post("/api/signup", {
+      $.post("/signup", {
       email: email,
       password: password,
     })

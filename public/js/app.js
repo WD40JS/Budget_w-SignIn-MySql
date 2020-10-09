@@ -235,10 +235,10 @@ let dropDown = document.getElementById('dropdownMenu3');
         console.log('Initializing...');
         setupEventListeners();
         UIController.showCurrentMonth();
-    }
+   
 
     init();
-
+    }
 })(UIController, ExpenseController);
 
 

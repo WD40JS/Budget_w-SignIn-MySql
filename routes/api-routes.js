@@ -5,7 +5,7 @@ const passport = require("../config/passport");
 module.exports = function(app) {
  
 // Post Password Information Login
-  app.post("/api/login", passport.authenticate("local"), (req, res) => {
+  app.post("/login", passport.authenticate("local"), (req, res) => {
     res.json({
       email: req.user.email,
       id: req.user.id
@@ -13,7 +13,7 @@ module.exports = function(app) {
   });
 
 // Post Password Information Signup
-  app.post("/api/signup", (req, res) => {
+  app.post("/signup", (req, res) => {
     db.User.create({
       email: req.body.email,
       password: req.body.password

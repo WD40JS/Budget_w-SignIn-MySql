@@ -24,7 +24,7 @@ $(document).ready(() => {
 
 
   function loginUser(email, password) {
-    $.post("/api/login", {
+    $.post("/login", {
       email: email,
       password: password
     })
