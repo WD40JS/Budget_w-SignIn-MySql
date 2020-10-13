@@ -3,7 +3,6 @@ let ExpenseController = (() => {
 
     return {
         inputEntry(userInput) {
-            console.log(userInput)
             if (userInput['expenseType'] === 'income') {
                 income += userInput['value'];
                 total += userInput['value'];
@@ -38,7 +37,7 @@ let ExpenseController = (() => {
 })();
 
 let UIController = (() => {
-    // let setExpenseType = 'saving';
+    let expenseType = 'saving';
 
     let HTMLStrings = {
         inExpenseDescription: '.input-expense-description',
@@ -236,9 +235,8 @@ let dropDown = document.getElementById('dropdownMenu3');
         console.log('Initializing...');
         setupEventListeners();
         UIController.showCurrentMonth();
-   
+    }
 
     init();
-    }
-})(UIController, ExpenseController);
 
+})(UIController, ExpenseController);
