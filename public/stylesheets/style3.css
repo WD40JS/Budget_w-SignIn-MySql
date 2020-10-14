@@ -1,37 +1,26 @@
-/* Body Image and Layout Tags */
+
 body, html {
+  
   height: 100%;
-  background-image: url("/images/home.jpg");
+
+  /* The image used */
+  background-image: url("./images/home.jpg");
+
+  
+
+  /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-
-/* H2 Tag */
 h2 {
-  color: white;
+  
   text-align: left;
 
-}
 
-/* Form Layout */
-.item-6 {
+}
+.item-6{
 margin-top: 100px;
-margin-left: 200px;
 float: right;
 
 }
-/* Logo Tag */
-.logo {
-  margin: 10px;
-  width: 100%;
-  padding: 5px;
-}
-
-/* Column Layout */
-.col-12 {width: 100%;
-  content: center;
-  }
-  
-
- 
